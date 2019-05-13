@@ -1,0 +1,16 @@
+<h3>Top Heroes </h3>
+
+
+<div class="grid grid-pad">
+
+<a *ngFor="let hero of Heroes" class="col-1-4" routerLink="/detail/{{hero.id}}"><!--asignamos una 
+interpolación dentro del routerLink para que está se repita conforme va iterando el indice-->
+
+<div class="module hero">
+<h4>{{hero.name}}</h4>
+</div>
+
+</a>
+
+
+</div>
